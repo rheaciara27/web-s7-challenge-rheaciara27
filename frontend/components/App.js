@@ -4,12 +4,13 @@ import Form from './Form'
 import { NavLink } from 'react-router-dom';
 import {Routes, Route} from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
-
 function App() {
+  
   return (
     <div id="app">
       <nav>
         {/* NavLinks here */}
+          
           <NavLink to='/'>
             Home
           </NavLink>
@@ -17,14 +18,14 @@ function App() {
             Order
           </NavLink>
 
+      
       </nav>
       {/* Route and Routes here */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/order" element={<Form />} />
       </Routes>
-
-      
+ 
     </div>
   )
 }
